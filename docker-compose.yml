@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testcreditcard.web:
+    image: ${DOCKER_REGISTRY}testcreditcardweb
+    build:
+      context: .
+      dockerfile: TestCreditCard.Web/Dockerfile
